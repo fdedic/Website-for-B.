@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  <link rel='stylesheet' href='../../assets/css/normalize.css'>
+<link rel='stylesheet' href='../../assets/css/skeleton.css'>
+<link rel='stylesheet' href='../../assets/css/typeplate.css'>
+<link rel='stylesheet' href='../../assets/css/site.css'>
+  <script src='../../assets/js/jquery-1.8.3.min.js'></script>
+<script src='../../assets/js/app.js'></script>
+
+  <link href="../../assets/favicon.ico" rel="shortcut icon">
+  <link href="../../assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <title>New Project</title>
+
+</head>
+
+<body>
+  <div class="container">
+
+  <header>
+   <div class="header">
+       <nav class="fit">
+    <ul>
+      <li><a href="./index.html">Barbora Pešek</a></li>
+      <li><a href="./index.html">Work</a></li>
+      <li><a href="./about/index.html">About</a></li>
+    </ul>
+  </nav>
+
+   </div>
+  </header>
+  <main>
+    <header class=>
+        <h1>Preciosa Redesign</h1>
+
+<p>Branding</p>
+    </header>
+    <section>
+      <div class="">
+        <p>Pro divizi Preciosa Lighting jsem společně s kreativními řediteli a externí agenturou vytvořila kompletní rebranding značky. Vznikla nová korporátní identita, kterou jsme s celým mým týmem postupně rozšířili na všechny firemní materiály a do externí i interní komunikace.</p>
+
+<p>Preciosa Lighting je součástí skupiny Preciosa Group, která patří mezi přední světové výrobce broušených křišťálových komponentů. Osvětlení a lustry společnosti Preciosa Lighting zdobí prostory po celém světě, můžete je najít v Londýně, Dubaji, Makau i New Yorku. Jsou umístěné v komerčních prostorách, veřejných či soukromých palácích a rezidencích. Rozsah sortimentu značky Preciosa zahrnuje také šperky, dárkové předměty, křišťálové komponenty pro módní průmysl i legendární barevné korálky.</p>
+      </div>
+      <div class="">
+        <p>Next Project</p>
+        <a href="#">Preciosa Global PR</a>
+      </div>
+    </section>
+  </main>
+  <section>
+    <div class="">
+      <h2>Contact me</h2>
+      <a href="/">info@barbora.me</a><br>
+      <a href="/">@barbora.pesek</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer fit">
+      (c) Barbora Pesek 2019
+    </div>
+  </footer>
+
+
+</div>
+
+</div>
+</body>
+
+</html>

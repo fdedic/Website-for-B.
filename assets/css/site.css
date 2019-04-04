@@ -1,0 +1,175 @@
+/* Body */
+
+body {
+	background: ;
+	font-family: HelveticaNeue-Medium, Arial, sans-serif;
+	font-size: 1rem;
+	color: #282828;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+}
+
+header {
+	padding: 15px 0 0;
+  margin: 0 auto;
+}
+
+footer {
+	padding: 15px 0 15px 0;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  text-decoration: none;
+	margin: 0 24px 0 0;
+}
+
+p + p {
+	text-indent: inherit;
+	margin-top: inherit;
+}
+
+.intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  letter-spacing: -.1px;
+
+  @media () {
+    font-size: ;
+    margin-bottom: ;
+  }
+}
+
+.mega {
+  font-size: 2.25rem;
+  line-height:  1.385;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  letter-spacing: -.1px;
+
+  @media () {
+    font-size: ;
+    margin-bottom: ;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  margin-bottom: 8px;
+  letter-spacing: -.1px;
+
+  @media () {
+    font-size: ;
+    margin-bottom: ;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.455;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  letter-spacing: -.1px;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.455;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  letter-spacing: -.1px;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.455;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  letter-spacing: -.1px;
+  font-family: "vegan_superior_rbobold", HelveticaNeue-Bold, Arial, sans-serif;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  letter-spacing: -.1px;
+}
+
+/* Links */
+
+a {
+  color: #282828;
+  border-bottom: 0.05em solid #282828;
+  text-decoration: none;
+}
+
+a:focus {
+  position: relative;
+  z-index: 100;
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.3);
+}
+
+body a {
+  color: #282828;
+  border-bottom: 0.05em solid #282828;
+  text-decoration: none;
+}
+
+body a:hover, body a:focus {
+  color: #282828;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a img {
+	border: none;
+	display: block;
+}
+
+a:hover img {
+	border: none;
+	display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+  color: #282828;
+  background: none;
+}
+
+h6 a:hover, h5 a:hover, h4 a:hover, h3 a:hover, h2 a:hover, h1 a:hover {
+  color: #282828;
+  text-decoration: none;
+  border-bottom: none;
+}
